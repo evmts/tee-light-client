@@ -6,6 +6,10 @@
   "type": "module",
   "scripts": {
     "all": "pnpm i",
+    "format": "biome format . --write",
+		"format:check": "biome format .",
+		"lint": "biome check . --write --unsafe",
+		"lint:check": "biome check . --verbose",
     "build": "tsc && cp src/manifest.json src/popup.html src/icon48.png src/icon128.png dist/",
     "watch": "tsc --watch"
   },

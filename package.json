@@ -4,12 +4,16 @@
   "private": true,
   "description": "",
   "scripts": {
+    "format:check": "biome format .",
+    "lint": "biome check . --write --unsafe && biome format . --write",
+    "lint:check": "biome check .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "typescript": "^5.7.2"
   },
   "dependencies": {

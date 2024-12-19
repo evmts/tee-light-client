@@ -36,6 +36,10 @@
 		"build": "nx run-many --targets=build:dist,build:types --projects=@onchain-clippy/light-client",
 		"build:dist": "tsup",
 		"build:types": "tsup --dts-only && tsc --emitDeclarationOnly --declaration",
+		"format": "biome format . --write",
+		"format:check": "biome format .",
+		"lint": "biome check . --write --unsafe",
+		"lint:check": "biome check . --verbose",
 		"generate:docs": "typedoc",
 		"clean": "rm -rf node_modules && rm -rf artifacts && rm -rf dist && rm -rf cache"
 	},

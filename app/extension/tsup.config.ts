@@ -1,2 +1,2 @@
-import { js } from '@tevm/tsupconfig';
+import { js } from '@tevm/tsupconfig'
 export default js
